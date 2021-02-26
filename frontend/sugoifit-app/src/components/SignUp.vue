@@ -148,8 +148,8 @@ export default {
 
     #square2{
         position: absolute;
-        width: 196px;
-        height: 280px;
+        width: 216px;
+        height: 300px;
         left: 134px;
         top: 70px;
 
@@ -158,8 +158,8 @@ export default {
 
     #square1{
         position: absolute;
-        width: 196px;
-        height: 280px;
+        width: 216px;
+        height: 300px;
         
         left: 36px;
         top: 120px;
