@@ -264,48 +264,57 @@ Added Styles
 ------------------------- */
 
 .nav_icon{
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   /* margin: 0 0  0 */
   margin-top: 18px;
+  justify-content: start;
+  align-items: center;
+  /* background-color: #00A99D; */
 }
 .nav_logo{
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding:20px;
+  vertical-align: middle;
 }
 
-
+.nav_logo span{
+  color: #428B95
+}
 .profile{
   margin-bottom: 15px;
   display: grid;
-  grid-template-areas: 'name icon ' 
-                        'ID icon'
+  grid-template-areas: 'name name ' 
+                        'ID ID'
                         'role role';
   grid-column-gap: 24px;
+  z-index: 1;
 }
 
 #profile_name{
   grid-area: name;
   font-weight: 200;
+  font-size: 16px;
   }
 #profile_ID{
   grid-area: ID;
   color: #00A99D;
+  font-size: 16px;
 }
 
 #profile-icon{
-  width: 60px;
-  height:60px;
-  grid-area: icon;
-  /* margin: 5px; */
-  /* padding:  5px; */
+  width: 80px;
+  height:80px;
+  align-items: center;
+  margin-top: 5px;
 }
 
 #role{
   grid-area: role;
-  width:10rem;
+  width:12rem;
   font-weight: 200;
+  font-size: 16px;
   /* background-color: #8e81f1; */
 }
 .profile >h6 {
@@ -328,4 +337,5 @@ Added Styles
 
 .list-unstyled li a {
   text-align: start;
+  font: 300 16px 'Poppins';
 }
