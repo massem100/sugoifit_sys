@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Dashboard from '@/components/Dashboard'
+import Add_Transaction from '@/components/Add_Transaction'
+import Login from '@/components/Login'
 import Website from '@/components/Website'
-import Home from '@/components/Home'
 import PlaceOrder from '@/components/PlaceOrder'
+import Home from '@/components/Home'
 
 Vue.use(Router)
 
@@ -11,23 +13,34 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Dashboard',
+      component: Dashboard
     },
     {
-      path: '/website',
+      path: '/transaction',
+      name: 'Add_Transaction',
+      component: Add_Transaction,
+    },
+    {
+      path:'/Login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path:'/website',
       name: 'Website',
       component: Website
     },
     {
-      path: '/home',
+      path:'/placeorder',
+      name: 'PlaceOrder',
+      component: PlaceOrder
+    },
+    {
+      path:'/home',
       name: 'Home',
       component: Home
     },
-    {
-      path: '/placeorder',
-      name: 'PlaceOrder',
-      component: PlaceOrder
-    }
-  ]
+  ], 
+  mode: 'history',
 })

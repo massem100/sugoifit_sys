@@ -16,15 +16,15 @@
       </div>
     </div>
 
-    <!-- Main section -->
+    <!-- Main section
     <div class="flex-item">
       <home> </home>
-    </div>
+    </div> -->
 
-    <!-- Place Order
+    <!-- Place Order -->
     <div class="flex-item">
-      <placeorder> </placeorder>
-    </div>  -->
+      <place-order></place-order>
+    </div>  
 
 
     
@@ -47,53 +47,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-body{
-  margin: 0;
-};
 
-.container{
-  display: flex;
-  flex-direction: column;
-}
-.header {
-  overflow: hidden;
-  padding: 20px 10px;
-}
-
-.header a{
-  float: left;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-.header-right {
-  float: right;
-}
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
-.flex-item{
-  width: 100%;
-  height: 100%;
-  padding-bottom: 50px;
-}
 </style>
