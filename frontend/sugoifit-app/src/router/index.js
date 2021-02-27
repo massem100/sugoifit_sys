@@ -9,7 +9,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard
     },
@@ -19,7 +19,7 @@ export default new Router({
       component: Add_Transaction,
     },
     {
-      path:'/Login',
+     path:'/',
       name: 'Login',
       component: Login
     }
