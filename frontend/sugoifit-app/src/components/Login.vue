@@ -1,8 +1,9 @@
 <template>
     
     <div class="entirePage">
+        <h2 id='logo'>SugoiFit</h2>
         <div  class='sidebar'>
-            <h2>SugoiFit</h2>
+            
 
             <div id="square1">
 
@@ -12,11 +13,16 @@
             </div>
         </div>
         
-         <div class = 'main-area'>
+        <div class='main-area'>
                 <div id="header">
                     <br>
                     <h2> Login </h2>
+                    <br>
                 </div>
+                <div> 
+                    <p>Welcome back, enter your username and password</p>
+                </div>
+
                 <form>
                     <br>
                     <br><br>
@@ -38,8 +44,7 @@
                     <a href=""> Dont have an account? Sign up your business! </a>
                 </div>
 
-          </div>
-         
+        </div>   
     </div>
 </template>
 
@@ -94,9 +99,9 @@ export default {
     #square2{
         position: absolute;
         width: 196px;
-        height: 268px;
+        height: 280px;
         left: 134px;
-        top: 84px;
+        top: 70px;
 
         background: #DFFBFF;
     }
@@ -104,26 +109,49 @@ export default {
     #square1{
         position: absolute;
         width: 196px;
-        height: 268px;
+        height: 280px;
+        
         left: 36px;
         top: 120px;
 
         background: #7CC3CD;
     }
 
-    .entirePage{
+    @media(min-width: 768px){
+        .entirePage{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: auto;
         
-        display: grid;
-        grid-template-columns: 1fr 7fr 1fr;
-        grid-column-gap: 1em;
-    
+        }
     }
 
     .sidebar{
-        padding-left: 50%;
+        flex: 1;
+        padding-left: 15%;
+        padding-bottom: 30%;
+        align-items: flex-start;
+        position: relative;
+        left: 10%;
+        top: 0%;
+    
     }
 
+    .main-area{
+        flex: 3;
+        padding-right: 20%;
+    }
 
+    #logo{
+        position: absolute;
+        top: 10%;
+        left: 14%
+    }
     
-
 </style>
